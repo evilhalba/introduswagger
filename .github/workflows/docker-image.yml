@@ -7,6 +7,7 @@ env:
   REPOSITORY_NAME: ${{ secrets.REPOSITORY_NAME}}
 jobs:
   build_and_push_to_registry:
+    environment: DOCKER DEPLOY
     name: Build and push Docker image to Docker Hub
     runs-on: ubuntu-latest
     steps:
